@@ -11,9 +11,9 @@ class DAQ_Move_Zaber(DAQ_Move_base):
 
     # find available COM ports
     ports = Tools.list_serial_ports()
-    port = 'COM5' if 'COM5' in ports else ports[0] if len(ports) > 0 else ''
+    port = 'COM6' if 'COM6' in ports else ports[0] if len(ports) > 0 else ''
 
-    is_multiaxes = True
+    is_multiaxes = False
     _controller_units = 'mm'
     stage_names = []
     _epsilon = 0.01
